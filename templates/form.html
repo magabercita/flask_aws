@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} MAKE WINE PREDICTIONS {% endblock %}</h1>
+    <form method="post">
+
+
+        <label for="color">Wine Color</label>
+        <br>
+        <input type="text" name="color"
+               placeholder="Input wine color"
+               value="{{ request.form['color'] }}"></input>
+        <br>
+
+        <label for="flav">Flavinoseque</label>
+        <br>
+        <input type="text" name="flav"
+               placeholder="Input Flavs"
+               value="{{ request.form['flav'] }}"></input>
+        <br>
+
+        <label for="alc">Alcohol level</label>
+        <br>
+        <input type="text" name="alc"
+               placeholder="Input Alcohol level"
+               value="{{ request.form['alc'] }}"></input>
+        <br>
+
+        <label for="prol">Prololol level</label>
+        <br>
+        <input type="text" name="prol"
+               placeholder="Input Prol"
+               value="{{ request.form['prol'] }}"></input>
+        <br>
+
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    <br>
+    <br>
+    <div><STRONG>Prediction: {{prediction}}</STRONG></div>
+
+{% endblock %}
