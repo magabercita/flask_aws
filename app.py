@@ -60,7 +60,7 @@ def predict_args():
     })
     
     
-    df.to_sql("predictions", con=engine, if_exists="append", index=None)
+    df.to_sql("predictions", con=engine, if_exists="append", index=None) # aquí meterá las predictions en la base de datos que le he dicho
     
     return {"results": {"prediction": str(output)}}
     
