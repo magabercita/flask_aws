@@ -4,3 +4,4 @@ scikit-learn
 sqlalchemy
 matplotlib
 gunicorn
+psycopg2-binary
