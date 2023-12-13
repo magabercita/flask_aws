@@ -141,5 +141,5 @@ def predict_form():
     
     
     return render_template("form.html", prediction = "N/A")
-
-app.run(debug=True, port=8080)
+if__name__ == "__main__":
+    app.run(debug=True, port=8080)
